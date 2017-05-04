@@ -19,7 +19,7 @@ new_pass=""
 
 
 def randomNumber():
-    return random.randint(0,9).__str__()
+    return random.randint(2,9).__str__()
 
 def addSuccessAcc(acc):
     with open('accounts_success.txt', 'a') as f1:
@@ -48,12 +48,19 @@ with open("accounts.txt", "r") as ins:
         password=line.split(":")[1].split("\n")[0]
 
         if(randomPw):
-            new_pass="$"+names.get_first_name(gender="female")
+            sexe=""
+            rand=random.randint(0,1)
+            if(rand==1):
+                sexe="male"
+            if(rand==2):
+                sexe="female"
+            new_pass="!"+names.get_first_name(gender=sexe)
             count_name=len(new_pass)
             if(len(new_pass)>8):
                 new_pass=new_pass[0:8]
             while(len(new_pass)<9):
                 new_pass+=randomNumber()
+            new_pass = new_pass.replace("I", "Y")
         addAllPw(new_pass)
         accounts.append(Account(username,password,new_pass))
 

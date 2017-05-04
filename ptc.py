@@ -19,7 +19,7 @@ from selenium.common.exceptions import TimeoutException
 from ptcexceptions import *
 from utils import *
 
-BASE_URL = "https://club.pokemon.com/us/pokemon-trainer-club"
+BASE_URL = "https://club.pokemon.com/us/pokemon-trainer-club/caslogin"
 
 BASE_URL_LOGIN ="https://www.pokemon.com/us/pokemon-trainer-club"
 
@@ -128,7 +128,7 @@ def login_account(username,password):
     display = Xvfb()
     display.start()
     driver = webdriver.Chrome()
-    driver.set_window_size(600, 600)
+    driver.set_window_size(1200, 800)
 
     #driver=webdriver.Chrome()
     #driver.set_window_size(600,600)
@@ -164,10 +164,15 @@ def change_password(username,password,new_password):
         arr=login_account(username,password)
         if(arr!=False):
             driver = arr[0]
-            button_edit_profile=driver.find_element_by_xpath("//a[contains(text(),'Edit Profile')]")
+            #button_edit_profile=driver.find_element_by_xpath("//a[contains(text(),'Edit Profile')]")
+            #/ html / body / div[4] / section[2] / div[1] / ul[2] / li[1] / div / a / h3
+            button_edit_profile = driver.find_element_by_xpath('/html/body/div[4]/section[2]/div[1]/ul[2]/li[1]/div/a/h3')
             handleClick(clickable=button_edit_profile,driver=driver,error_message="Failed to go to edit profile",display=arr[1])
-            button_change_password=driver.find_elements_by_xpath("//a[@class='button button-blue arrow-right right button-inline']")
-            handleClick(clickable=button_change_password[1],driver=driver,error_message="Failed to go to change password",display=arr[1])
+            button_change_password=driver.find_element_by_xpath('//*[@id="account"]/fieldset[1]/div/div/a[2]')
+            #button_change_password = driver.find_elements_by_xpath(
+             #   "//a[@class='button button-blue arrow-right right button-inline']")
+            handleClick(clickable=button_change_password,driver=driver,error_message="Failed to go to change password",display=arr[1])
+            #driver.get("https://club.pokemon.com/us/pokemon-trainer-club/my-password")
 
             old_password = driver.find_element_by_name("current_password")
             old_password.clear()
@@ -196,7 +201,7 @@ def change_password(username,password,new_password):
                 driver.quit()
                 arr[1].stop()
         return state
-    except:
+    except Exception:
         return False
 
 
