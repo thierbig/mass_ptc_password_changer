@@ -84,8 +84,14 @@ If none of the steps below ring a bell for you, please just blindly follow the i
 `pip install -r requirements.txt`
 
 ### Run the tool
-* (I expect you guys to use the Graphical interface for this part) 
-Go ahead and find the folder mass_ptc_password_changer on your machine. Open it. Modify the accounts.txt file and enter all the accounts you want to change password with the format `acc:pass` on each line. Modify the __init__.py file and enter the new password at the top where it says `new_pass=""`. Just put the new password inside the "". Close accounts.txt and __init__.py and make sure to save the modification.
+* (I expect you guys to use the Graphical interface for this part)
+Go ahead and find the folder mass_ptc_password_changer on your machine. Open it. Modify the accounts.txt file and enter all the accounts you want to change password with the format `acc:pass` on each line.
+
+The tool is currently set to generate easy random passwords. To disable this mode just look for the line `randomPw=True` at the top of __init__.py and set it to False if you want to set the same password to all accounts. Random passwords generated from this tool are easily readable passwords ready for customers. Example : "$Bruno97" .
+
+If you choose to enter a custom password for all account, modify the __init__.py file and enter the new password at the top where it says `new_pass=""`. Just put the new password inside the "".
+
+Make sure  to save all modifications on accounts.txt and __init__.py before closing.
 
 * Open a new terminal (CTRL+T), enter these lines and follow the console to follow the changes made to PTC accounts.
 

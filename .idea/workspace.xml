@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="272056f2-9550-42ef-840f-343af0e166b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts.txt" afterPath="$PROJECT_DIR$/accounts.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts_success.txt" afterPath="$PROJECT_DIR$/accounts_success.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passwords.txt" afterPath="$PROJECT_DIR$/passwords.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ptc.py" afterPath="$PROJECT_DIR$/ptc.py" />
     </list>
     <ignored path="mass_ptc_password_changer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mass_ptc_password_changer$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1493925451417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mass_ptc_password_changer$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1508122035077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -29,11 +31,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="accounts.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="accounts.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="492" column="25" lean-forward="true" selection-start-line="492" selection-start-column="25" selection-end-line="492" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accounts_success.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/accounts_success.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,8 +74,8 @@
       <file leaf-file-name="passwords.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/passwords.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="15378" column="9" lean-forward="false" selection-start-line="15378" selection-start-column="9" selection-end-line="15378" selection-end-column="9" />
+            <state relative-caret-position="285825">
+              <caret line="19055" column="9" lean-forward="false" selection-start-line="19055" selection-start-column="0" selection-end-line="19055" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -62,19 +84,11 @@
       <file leaf-file-name="ptc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ptc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2760">
-              <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xvfbwrapper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/py3envs/lib/python3.5/site-packages/xvfbwrapper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2520">
+              <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+              <folding>
+                <element signature="e#236#247#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +96,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="83" column="16" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+            <state relative-caret-position="900">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
               </folding>
@@ -117,23 +131,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>,</find>
-      <find>w</find>
-      <find>!Jeffrey8</find>
-      <find>Jeffrey8</find>
-      <find>FLAMEMon6771</find>
-      <find>FLAMEMon664028</find>
-      <find>FLAMEMon664056</find>
-      <find>FLAMEMon664037</find>
-      <find>FLAMEMon663885</find>
-      <find>FLAMEMon663944</find>
       <find>FLAMEMon663888</find>
       <find>famp</find>
       <find>LINK1Kit</find>
       <find>116</find>
       <find>swong</find>
       <find />
-      <find />
+      <find>FLAMEMon0199293</find>
+      <find>login</find>
+      <find>RobNaTarLogo</find>
+      <find>Dog</find>
+      <find>Username:</find>
+      <find>Password:</find>
+      <find>Pass :</find>
+      <find>grashfinchih</find>
+      <find>Fib</find>
+      <find>Law</find>
+      <find>left</find>
+      <find>bland</find>
+      <find>chink</find>
+      <find>spar</find>
+      <find>;</find>
+      <find>dungnt46@gmail.com</find>
+      <find>SilkRoad1370</find>
+      <find>EL</find>
+      <find>,</find>
+      <find>KnobITVENLid</find>
+      <find>LINK5GEN5495</find>
+      <find>/</find>
+      <find>gmail</find>
+      <find>button_edit_profile</find>
     </findStrings>
     <replaceStrings>
       <replace>.:</replace>
@@ -148,11 +175,12 @@
       <list>
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$USER_HOME$/PycharmProjects/changetxt/__init__.py" />
-        <option value="$PROJECT_DIR$/accounts_fail.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/ptc.py" />
+        <option value="$PROJECT_DIR$/accounts_fail.txt" />
         <option value="$PROJECT_DIR$/passwords.txt" />
-        <option value="$PROJECT_DIR$/accounts_success.txt" />
         <option value="$PROJECT_DIR$/accounts.txt" />
+        <option value="$PROJECT_DIR$/accounts_success.txt" />
       </list>
     </option>
   </component>
@@ -184,7 +212,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -199,12 +226,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Red-DiscordBot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -495,7 +523,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25067386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47316104" sideWeight="0.5018868" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50152904" sideWeight="0.52991915" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -503,7 +531,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50152904" sideWeight="0.49811321" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5107034" sideWeight="0.47008085" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -565,14 +593,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ptc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -629,7 +649,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="72" />
-          <folding />
+          <folding>
+            <element signature="e#236#247#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,7 +703,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="72" />
-          <folding />
+          <folding>
+            <element signature="e#236#247#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,7 +756,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="72" />
-          <folding />
+          <folding>
+            <element signature="e#236#247#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,7 +785,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#236#247#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -851,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,29 +898,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_fail.txt" />
-    <entry file="file://$PROJECT_DIR$/ptc.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        <state relative-caret-position="1575">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
+    <entry file="file://$PROJECT_DIR$/ptc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="83" column="16" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        <state relative-caret-position="2520">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding>
-            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#236#247#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_success.txt">
+    <entry file="file://$PROJECT_DIR$/passwords.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="497" column="25" lean-forward="false" selection-start-line="497" selection-start-column="25" selection-end-line="497" selection-end-column="25" />
+        <state relative-caret-position="285825">
+          <caret line="19055" column="9" lean-forward="false" selection-start-line="19055" selection-start-column="0" selection-end-line="19055" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -908,18 +934,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/passwords.txt">
+    <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="15378" column="9" lean-forward="false" selection-start-line="15378" selection-start-column="9" selection-end-line="15378" selection-end-column="9" />
+        <state relative-caret-position="900">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_fail.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="492" column="25" lean-forward="true" selection-start-line="492" selection-start-column="25" selection-end-line="492" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_success.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

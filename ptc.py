@@ -166,7 +166,9 @@ def change_password(username,password,new_password):
             driver = arr[0]
             #button_edit_profile=driver.find_element_by_xpath("//a[contains(text(),'Edit Profile')]")
             #/ html / body / div[4] / section[2] / div[1] / ul[2] / li[1] / div / a / h3
-            button_edit_profile = driver.find_element_by_xpath('/html/body/div[4]/section[2]/div[1]/ul[2]/li[1]/div/a/h3')
+            #button_edit_profile = driver.find_element_by_xpath('/html/body/div[4]/section[2]/div[1]/ul[2]/li[1]/div/a/h3')
+            button_edit_profile = driver.find_element_by_xpath(
+                '/html/body/div[3]/section[2]/div[1]/ul[2]/li[1]/div/a/h3')
             handleClick(clickable=button_edit_profile,driver=driver,error_message="Failed to go to edit profile",display=arr[1])
             button_change_password=driver.find_element_by_xpath('//*[@id="account"]/fieldset[1]/div/div/a[2]')
             #button_change_password = driver.find_elements_by_xpath(
