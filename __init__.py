@@ -21,9 +21,9 @@ new_pass=""
 def randomNumber():
     return random.randint(2,9).__str__()
 
-def addSuccessAcc(acc):
+def addSuccessAcc(acc,email):
     with open('accounts_success.txt', 'a') as f1:
-        f1.write(acc.username + ":" + acc.new_password + os.linesep)
+        f1.write(acc.username + ":" + acc.new_password +";"+ email+ os.linesep)
 
 
 def addFailAcc(acc):
@@ -82,15 +82,13 @@ fail_accounts=[]
 for i in range(len(accounts)):
     j=1
     sucess=False
-    while (sucess==False and j<5):
+    while (sucess==False and j<3):
         print("Changing password of account - " + accounts[i].username)
         sucess=change_password(accounts[i].username,accounts[i].password,accounts[i].new_password)
-        if(sucess):
+        if(sucess!=False):
             print("SUCCESS:Changed password of account - "+accounts[i].username+" after "+j.__str__()+" try/ies")
             sucess_account.append(accounts[i])
-            addSuccessAcc(accounts[i])
-        elif(sucess=="invalidPassword"):
-            print("Invalid password case for account - " + accounts[i].username+". Going to next.")
+            addSuccessAcc(accounts[i],sucess)
         else:
             print("FAIL:Failed to change password of account because of http errors...- " + accounts[i].username + " after " + j.__str__() + " try/ies")
             time.sleep(10+j*2)

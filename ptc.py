@@ -125,10 +125,10 @@ def _default_captcha_handler(driver):
 def login_account(username,password):
    # driver = webdriver.Chrome()
    # driver.set_window_size(600, 600)
-    display = Xvfb()
-    display.start()
+    #display = Xvfb()
+    #display.start()
     driver = webdriver.Chrome()
-    driver.set_window_size(1200, 800)
+    driver.set_window_size(1200, 900)
 
     #driver=webdriver.Chrome()
     #driver.set_window_size(600,600)
@@ -145,16 +145,16 @@ def login_account(username,password):
     elem.clear()
     elem.send_keys(password)
 
- #   elem.submit()
+    #elem.submit()
 
 
-    handleClick(submitable=elem,driver=driver,error_message="Failed to log in",display=display)
+    handleClick(submitable=elem,driver=driver,error_message="Failed to log in",display=None)
     url = driver.current_url
     if url in SUCCESS_URLS:
-        return [driver,display]
+        return [driver]
     else:
         driver.quit()
-        display.stop()
+        #display.stop()
         return False
 
 def change_password(username,password,new_password):
@@ -168,12 +168,14 @@ def change_password(username,password,new_password):
             #/ html / body / div[4] / section[2] / div[1] / ul[2] / li[1] / div / a / h3
             #button_edit_profile = driver.find_element_by_xpath('/html/body/div[4]/section[2]/div[1]/ul[2]/li[1]/div/a/h3')
             button_edit_profile = driver.find_element_by_xpath(
-                '/html/body/div[3]/section[2]/div[1]/ul[2]/li[1]/div/a/h3')
-            handleClick(clickable=button_edit_profile,driver=driver,error_message="Failed to go to edit profile",display=arr[1])
+                '/html/body/div[3]/section[2]/div[1]/ul[2]/li[1]/ul/li[1]/a')
+            handleClick(clickable=button_edit_profile,driver=driver,error_message="Failed to go to edit profile",display=None)
             button_change_password=driver.find_element_by_xpath('//*[@id="account"]/fieldset[1]/div/div/a[2]')
-            #button_change_password = driver.find_elements_by_xpath(
-             #   "//a[@class='button button-blue arrow-right right button-inline']")
-            handleClick(clickable=button_change_password,driver=driver,error_message="Failed to go to change password",display=arr[1])
+
+           # button_change_password = driver.find_elements_by_xpath(
+            #    "//a[@class='button button-blue arrow-right right button-inline']")
+            account_email=driver.find_element_by_id("id_email").get_attribute('value')
+            handleClick(clickable=button_change_password,driver=driver,error_message="Failed to go to change password",display=None)
             #driver.get("https://club.pokemon.com/us/pokemon-trainer-club/my-password")
 
             old_password = driver.find_element_by_name("current_password")
@@ -196,12 +198,12 @@ def change_password(username,password,new_password):
                     if "Your password has been updated" in success[i].text:
                         state=True
                         driver.quit()
-                        arr[1].stop()
-                        return state
+                 #       arr[1].stop()
+                        return account_email
             except Exception:
                 print("Failed to change password")
                 driver.quit()
-                arr[1].stop()
+                #arr[1].stop()
         return state
     except Exception:
         return False
@@ -219,7 +221,7 @@ def handleClick(driver,error_message,display,clickable=None,submitable=None):
     except StaleElementReferenceException:  # User probably already pressed submit
         print("Error StaleElementReferenceException!")
         driver.quit()
-        display.stop()
+        #display.stop()
         return False
 
 def create_account(username, password, email, birthday, captcha_handler):

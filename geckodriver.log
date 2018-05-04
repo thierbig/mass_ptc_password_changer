@@ -1,0 +1,21 @@
+1524691959920	geckodriver	INFO	Listening on 127.0.0.1:59767
+1524691960861	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ci9WxHQdpQGr
+1524691960861	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1524691960863	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40059
+1524691961374	Marionette	INFO	Enabled via --marionette
+1524691962680	Marionette	INFO	Listening on port 40059
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x47000E,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 325: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 325: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+1524691977859	geckodriver	INFO	Listening on 127.0.0.1:44541
+1524691977863	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Wki6pLzZuMci
+1524691977863	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1524691977864	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45378
+1524691978348	Marionette	INFO	Enabled via --marionette
+1524691979676	Marionette	INFO	Listening on port 45378
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 325: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 325: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
